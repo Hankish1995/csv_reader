@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+        width: 89%;
+        margin: auto;
+     
+        align-items: center;
+        justify-content: center;
+}
+.css-1ex1afd-MuiTableCell-root {
+  font-size: 12px !important;
+}
+.css-15oz2oa-MuiTableCell-root {
+  font-size: 13px !important;
+}
+.css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper{
+  box-shadow:unset !important;
+  transition: unset !important;
+}
+.filter_outer{
+  display: flex;
+  gap:'10px'
+}
+.pagination_container ul{
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  justify-content: end;
+}
+.pagination_container ul li.selected {
+  background: #00c2ff;
+  padding: 10px;
+  height: 20px;
+ min-width: 20px;
+  text-align: center;
   color: white;
+  border-radius: 30px;
 }
+.pagination_container ul li{
+  padding: 10px;
+  height: 20px;
+  min-width: 20px;
+  text-align: center;
+  color: black;
+  border-radius: 30px;
+  background-color: #dfdbdb;
+}
+.pagination_container ul li.next {
+  min-width: 49px !important;
+}
+.pagination_container ul li.previous {
+  min-width: 88px !important;
+}
+.css-6hp17o-MuiList-root-MuiMenu-list{
+  /* width: 45%; */
+  background: #f1f1f0;
+  border-radius: 10px;
+  box-shadow: 7px 5px 10px #edebeb;
+}
+input {
+  border: 1px solid #cdcbcb;
+  padding: 7px;
+  border-radius: 7px;
+}
+input:focus-visible {
+  outline-offset: 0px;
+  border: unset;
+  outline: unset;
+}
+.menu_items ul li {
+  display: flex;
+  justify-content: space-between;
+}
+div.menu_items ul li:hover{
+  background-color: unset;
+}
+.menu_items ul li .MuiTouchRipple-root{
+  display: none;
+ }
+.Search_btn {
+  background: #bf6349 !important;
+  color: white !important;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ }
+.btn_outer{
+  text-align: end;
+  margin-right: 19px;
+ }
+.loader_outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ }
+ .datatable{
+  min-height: 550px;
+ }
+ .datatable tbody{
+  position: relative;
+ }
